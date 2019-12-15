@@ -307,7 +307,7 @@ function Javinizer {
                 if ((Test-Path -LiteralPath $getPath.FullName -PathType Leaf) -and (Test-Path -LiteralPath $getDestinationPath.FullName -PathType Container)) {
                     Write-Debug "[$($MyInvocation.MyCommand.Name)] Detected path: [$($getPath.FullName)] as single item"
                     Write-Host "[$($MyInvocation.MyCommand.Name)] ($index of $($fileDetails.Count)) Sorting [$($fileDetails.OriginalFileName)]"
-                    Write-Verbose "[$($MyInvocation.MyCommand.Name)] Starting sort on [$($fileDetails.OriginalFileName)]"
+                    # Write-Verbose "[$($MyInvocation.MyCommand.Name)] Starting sort on [$($fileDetails.OriginalFileName)]"
                     if ($PSBoundParameters.ContainsKey('Url')) {
                         if ($Url -match ',') {
                             $urlList = $Url -split ','
