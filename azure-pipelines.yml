@@ -16,7 +16,7 @@ jobs:
     - task: PublishTestResults@2
       inputs:
         testRunner: 'NUnit'
-        testResultsFiles: '$(Build.SourcesDirectory)\ccReport\codeCoverage.xml'
+        testResultsFiles: '$(Build.SourcesDirectory)\src\Archive\ccReport\codeCoverage.xml'
         testRunTitle: 'pwsh_winLatest'
         displayName: 'Publish Test Results'
     - task: PublishPipelineArtifact@1
@@ -40,7 +40,7 @@ jobs:
     - task: PublishTestResults@2
       inputs:
         testRunner: 'NUnit'
-        testResultsFiles: '$(Build.SourcesDirectory)\ccReport\codeCoverage.xml'
+        testResultsFiles: '$(Build.SourcesDirectory)\src\Archive\ccReport\codeCoverage.xml'
         testRunTitle: 'pwsh_ubuntuLatest'
         displayName: 'Publish Test Results'
 
@@ -59,6 +59,6 @@ jobs:
     - task: PublishTestResults@2
       inputs:
         testRunner: 'NUnit'
-        testResultsFiles: '$(Build.SourcesDirectory)\ccReport\codeCoverage.xml'
+        testResultsFiles: '$(Build.SourcesDirectory)\src\Archive\ccReport\codeCoverage.xml'
         testRunTitle: 'pwsh_macOSLatest'
         displayName: 'Publish Test Results'
